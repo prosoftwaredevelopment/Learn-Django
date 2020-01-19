@@ -16,3 +16,6 @@ def intro(request,name,age):
         "age" : age
     }
     return JsonResponse(mydictionary)
+
+def myfirstpage(request):
+    return render(request,'index.html')
