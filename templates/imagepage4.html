@@ -1,0 +1,18 @@
+{% extends 'index.html' %}
+{% load static %}
+{% block title %}Image Page4{% endblock %}
+{% block content %}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-4">
+            <img src="{% static 'django.png' %}" class="img-fluid" alt="Responsive image">
+        </div>
+        <div class="col-4">
+            <img src="{% static 'python.png' %}" class="img-fluid" alt="Responsive image">
+        </div>
+        <div class="col-4">
+            <img src="{% static 'python.png' %}" class="img-fluid" alt="Responsive image">
+        </div>
+    </div>
+</div>
+{% endblock %}
