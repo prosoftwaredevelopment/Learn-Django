@@ -1,7 +1,31 @@
 {% extends 'index.html' %}
 {% block title %}My Form2{% endblock %}
 {% block content %}
-<form>
+<div class="col-md-6" style="margin: 0 auto;">
+
+  {% if success == True %}
+  <div class="alert alert-success alert-dismissible fade show" role="alert" style="margin-top: 1rem;">
+    <strong>{{successmsg}}
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  {% endif %}
+
+  {% if error == True %}
+  <div class="alert alert-danger alert-dismissible fade show" role="alert" style="margin-top: 1rem;">
+    <strong>{{errormsg}}
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  {% endif %}
+  
+<form method="POST">
+    <p class="text-muted">Note * : Title Should be Capital</p>
+    {% csrf_token %}
     {{form.as_ul}}
+    <button type="submit" class="btn btn-primary" style="margin: 1rem auto 0 auto;display: block;">Submit</button>
 </form>
+</div>
 {% endblock %}
