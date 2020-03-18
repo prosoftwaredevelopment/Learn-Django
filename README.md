@@ -1,10 +1,10 @@
 # Learn-Django
-Learn Django
 <br>
-How to run project
-<br>
-1.Download Project or Clone Repository, extract files and move inside project folder, and type the following commands. 
-<br>
-2.pip install -r requirements.txt
-<br>
-3.python manage.py runserver
+<b>How to run project</b>
+<hr>
+<ul>
+<li>Download Project or Clone Repository, extract files and move inside project folder, and type the following commands.</li>
+<li>Run Command "pip install -r requirements.txt"</li>
+<li>Run Command "python manage.py runserver"</li>
+<li>Toggle Between DEBUG = True or DEBUG = False to display default/custom 404 page </li>
+</ul>
